@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Sun rays with sunfinity color -->
+  <path d="M12 2v2" stroke="#f59e0b" stroke-width="2.5" />
+  <path d="M12 20v2" stroke="#f59e0b" stroke-width="2.5" />
+  <path d="M4.93 4.93l1.41 1.41" stroke="#f59e0b" stroke-width="2.5" />
+  <path d="M17.66 17.66l1.41 1.41" stroke="#f59e0b" stroke-width="2.5" />
+  <path d="M2 12h2" stroke="#f59e0b" stroke-width="2.5" />
+  <path d="M20 12h2" stroke="#f59e0b" stroke-width="2.5" />
+  <path d="M6.34 17.66l-1.41 1.41" stroke="#f59e0b" stroke-width="2.5" />
+  <path d="M19.07 4.93l-1.41 1.41" stroke="#f59e0b" stroke-width="2.5" />
+  
+  <!-- Sun center -->
+  <circle cx="12" cy="12" r="5.5" fill="#f59e0b" />
+</svg> 
