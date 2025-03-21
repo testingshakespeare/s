@@ -1,4 +1,5 @@
 import { Sun } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   const year = new Date().getFullYear();
@@ -35,10 +36,10 @@ export const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
+            <Link to="/" className="flex items-center gap-2 mb-4">
               <Sun className="h-7 w-7 text-sunfinity-500" />
               <span className="font-serif text-2xl font-semibold text-foreground">Sunfinity</span>
-            </div>
+            </Link>
             <p className="text-muted-foreground mb-6 max-w-sm">
               Empowering homes and businesses with clean, renewable solar energy solutions since 2010.
             </p>
@@ -84,12 +85,12 @@ export const Footer = () => {
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link.name}>
-                    <a 
-                      href={link.href} 
+                    <Link 
+                      to={link.href} 
                       className="text-muted-foreground hover:text-foreground transition-colors"
                     >
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -102,15 +103,15 @@ export const Footer = () => {
             © {year} Sunfinity. All rights reserved.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="/privacy-policy" className="text-muted-foreground hover:text-foreground text-sm transition-colors">
+            <Link to="/privacy-policy" className="text-muted-foreground hover:text-foreground text-sm transition-colors">
               Privacy Policy
-            </a>
-            <a href="/terms-of-service" className="text-muted-foreground hover:text-foreground text-sm transition-colors">
+            </Link>
+            <Link to="/terms-of-service" className="text-muted-foreground hover:text-foreground text-sm transition-colors">
               Terms of Service
-            </a>
-            <a href="/cookie-policy" className="text-muted-foreground hover:text-foreground text-sm transition-colors">
+            </Link>
+            <Link to="/cookie-policy" className="text-muted-foreground hover:text-foreground text-sm transition-colors">
               Cookie Policy
-            </a>
+            </Link>
           </div>
         </div>
       </div>
